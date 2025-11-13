@@ -357,22 +357,19 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
                               ],
                             ),
                           )
-                        : ListView.builder(
-                            padding: const EdgeInsets.symmetric(horizontal: 20),
-                            itemCount: _services.length,
-                            itemBuilder: (context, index) {
-                              return ServiceCardDiscover(
-                                service: _services[index],
-                                onTap: () {
-                                  Navigator.pushNamed(
-                                    context,
-                                    '/service-detail',
-                                    arguments: _services[index].serviceId,
-                                  );
-                                },
-                              );
-                            },
-                          ),
+                      :ListView.builder(
+  padding: const EdgeInsets.symmetric(horizontal: 20),
+  itemCount: _services.length,
+  itemBuilder: (context, index) {
+    return ServiceCardDiscover(
+      service: _services[index],
+      onTap: () {
+        Navigator.pushNamed(context, '/detalle_candidato');
+      },
+    );
+  },
+)
+
               ),
             ],
           ),
