@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # Firebase share aaron
+    # otras dependencias que tengas...
+  shared_preferences: ^2.1.1
 
   # Firebase Core (OBLIGATORIO)
   firebase_core: ^4.2.1
@@ -37,10 +40,12 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
-
 flutter:
-  uses-material-design: true
+  assets:
+    - assets/images/background_pattern.png
+    - assets/images/inicio1.png
+    - assets/images/inicio2.png
+    - assets/images/inicio3.png
+    - assets/images/logo.png
 
-assets:
-   assets/images/background_pattern.png
   #   - assets/icons/
