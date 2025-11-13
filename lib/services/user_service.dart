@@ -35,6 +35,7 @@ class UserService {
     String? bio,
     String? role,
     String? photoUrl,
+    String? email,
   }) async {
     try {
       final Map<String, dynamic> updates = {};
@@ -44,6 +45,8 @@ class UserService {
       if (bio != null) updates['bio'] = bio;
       if (role != null) updates['role'] = role;
       if (photoUrl != null) updates['photoUrl'] = photoUrl;
+
+      if (email != null) updates['email'] = email;
 
       if (updates.isEmpty) return;
 
